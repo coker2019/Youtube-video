@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    
+   
+}
+#nav-bar{
+    display: flex;
+    background-color: blue;
+    height: 70px; 
+    width: 100vw;
+    
+}
+#side-bar{
+    display: flex;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+
+}
+#video{
+     display: flex; 
+     height: 50%;
+     width: 50%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     background: red;
+     padding: 10px
+    
+    
+
+}
