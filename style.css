@@ -4,6 +4,7 @@ body{
     
    
 }
+
 #app{
     display: flex;
     min-height: 100vh;
@@ -33,6 +34,11 @@ body{
 #nav-bar ul li a:hover{
     color: red;
 }
+.notify-but{
+    display: flex;
+    position: relative;
+    margin: 0 30px;
+}
 .nav-logo{
     height: 50px;
     width: 100x;
@@ -44,21 +50,30 @@ body{
 }
 
 #side-bar{
-    display: flex;
-    background-color: green;
-    margin:100px 0px;
+    margin-top:10%;
+    width:20%;
+    float: right !important;
+    margin-left: auto;
+    position:relative;
     padding: 0;
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    text-align: left;
     
 
 }
+.preview-container{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding:5px 0px 5px 0px;
+   
+
+}
+
+
 #video{
      display: flex; 
      height: 50%;
-     width: 50%;
+     width:50%;
      position: absolute;
      left: 50%;
      top: 50%;
@@ -66,6 +81,8 @@ body{
      padding: 10px;  
 
 }
+
+
 .search-container{
     display: flex;
     width: 500px;
