@@ -3,17 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
-.flex-con{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: orange;
+
+.flex-con{  
     display: flex;
     align-items: center;
+   
+}
+nav {
+    padding: 10px 2%;
     justify-content: space-between;
-    padding: 5px 25px;
-    padding-right: 35px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+hr{
+    background-color: #888;
+    height: 2px;
+    border: none;
 }
 .logo-img{
     display: flex;
@@ -21,17 +31,10 @@
     height: 50px;
     width: 50px;
 }
-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 #logo-text{
     letter-spacing: -1.6px;
-    color: beige;
+    color: rgb(177, 177, 17);
 }
 .logo{
     display: flex;
@@ -40,6 +43,10 @@ img{
 .left{
     display: flex;
     align-items: center;
+    
+}
+.left img {
+
 }
 .center{
     display: flex;
@@ -51,7 +58,7 @@ img{
 position: relative;
 width: 100%;
 }
-.center input{
+.center  input{
     display: flex;
     align-items: center;
     height: 30px;
@@ -61,6 +68,7 @@ width: 100%;
     border: 1px solid grey;
     color: white;
     font-size: 1rem;
+    background: transparent;
 }
 .search{
     min-width: 55px;
@@ -70,7 +78,8 @@ width: 100%;
     justify-content: center;
     background-color: grey;
     z-index: 20;
-    border: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
     outline: none;
 }
 .mic{
@@ -100,27 +109,43 @@ width: 100%;
     overflow: hidden;
     margin-left: 25px;
 }
-.sidebar-con{
+
+.sidebar{
+    background:#fff;
+    padding-top: 12px;
+    width: 15%;
+    height: 100vh;
     display: flex;
     position: fixed;
-    height: 100vh;
-    top: 60px;
+    top: 0;
+    padding-top:80px;
+    padding-left: 2%;
 }
-.sidebar{
-    background-color:grey;
-    padding-top: 12px;
-    width: 250px;
-    overflow-y: scroll;
-    color: white;
+.sidebar-items a i{
+    width: 20px;
+    margin-right: 20px;
+    
+    
 }
-.sidebar-items{
+.sidebar-items a {
     display: flex;
-    flex-direction: column;
-}
-.sidebar a{
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    width: fit-content;
     text-decoration: none;
-    color: #fff;
 }
+.sidebar-items a:first-child {
+    color: red;
+}
+.tiny-sidebar {
+    width: 5%;
+}
+.tiny-sidebar a {
+    display: none;
+
+}
+
 .sidebar-contain{
     display: flex;
     align-items: center;
@@ -147,27 +172,49 @@ width: 100%;
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
 }
-#video-sec{
-   
+.video-sect {
+
+height: 90vh;
+position: relative;
+
+
 }
+
+
 .video-container {
-   width: 700px;
-   position: relative;
-   padding-bottom: 56.25%;
+    background-color: burlywood;
+    max-width: 700px;
+    width: 100%;
+    
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    
    
-   height: 0;
-   margin: 0 auto;
-   max-width: 100%;
+ 
+  
+   
 }
 .video-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 700px;
-    max-height: 400px;
+   
+
+ 
+   
+   
+    
     
 }
+
+
 
 
